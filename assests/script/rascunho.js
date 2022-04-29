@@ -9,17 +9,30 @@ function getRandomIndex (arr) {
 }
 
 
-// Aqui, a função está gerando índices repetidos em vários sorteios
-function getSequence (imgList) {
-    let roundSequence = [];
-    
-    for (let i = 0; i < 6; i++) {
-        let randomIndex = getRandomIndex(imgList);
-        roundSequence.push(imgList[randomIndex])
-    }
-    
-    return roundSequence;
-};
+/*A função "compare" auxilia a segunda função "getSequenceWithoutRepeating" a
+gerar uma sequência de exatamente 6 elementos aleatóriamente.*/
+
+function compare() {
+  return Math.random() - 0.5  
+}
+
+function getSequenceWithoutRepeating () {
+  /* Array vazia declarada em variável
+  para obtenção futura da sequência */
+  let roundSequence = [];
+  /* Reorganizo a array de clubes usando o método ".sort()"
+  e passo como parâmetro a função "compare()"  */
+  imgList.sort(compare)
+  /* Neste loop, a ideia é fazê-lo percorrer a array "imgList"
+  já reorganizada pelo .sort(compare) e adicionar o índice onde estiver na
+  array declarada inicialmente até então vazia*/
+  for( let i = 0; i < 6; i++) {    
+    roundSequence.push(imgList[i])
+  }
+  /* Retorna a array declarada na variável
+  anterior com 6 elementos sortidos*/
+  return roundSequence
+}
 
 function getAlternative (roundSequence) {
     let alternatives = [];
