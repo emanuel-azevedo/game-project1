@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;    
+    font-weight: bold;
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#screen {
+    border: 5px solid darkslateblue;
+    padding: 200px;
+    text-align: center;
+    width: 300px;    
+}
+
+#btn-start {
+    margin: 50px;
+    padding: 20px 40px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+
+}
+
+  

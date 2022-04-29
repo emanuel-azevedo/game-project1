@@ -1,0 +1,97 @@
+new css
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;    
+    font-weight: bold;    
+}
+
+* {
+    border: 1px solid red;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#screen {
+    background-color: white;
+    font-size: large;
+    border: 5px solid darkslateblue;
+    padding: 15px;
+    text-align: center;
+    width: 300px;    
+}
+
+#display-round {
+    background-color: white;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 25px;
+
+}
+
+#main-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#score {
+    background-color: white;
+    margin: 20px;
+    border:1px solid black;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+#white-board {
+    background-color: white;
+    margin:20px;
+    border: 1px solid black;
+    display: flex;
+    padding: 200px;
+    width: 300px;
+    justify-content: center;
+}
+
+#chances {
+    background-color: white;
+    margin: 20px;
+    border:1px solid black;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+#alternatives{
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+.options {
+    background-color: white;
+    margin:5px;
+    border: 1px solid black;
+    padding: 10px 300px;
+
+}
+
+#btn-confirm {
+    margin: 5px;
+    padding: 20px 40px;
+    background-color: rgb(0, 160, 0);
+    color: white;
+    border: 1px solid black;
+}
