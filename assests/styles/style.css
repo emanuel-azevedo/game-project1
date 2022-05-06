@@ -23,13 +23,11 @@ body {
     width: 300px;    
 }
 
-#btn-start {
+#start-btn {
     margin: 50px;
     padding: 20px 40px;
     background-color: green;
     color: white;
     border: 1px solid black;
-
 }
-
   

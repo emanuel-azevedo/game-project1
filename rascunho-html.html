@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="./assests/styles/rascunhocss.css" type="text/css" rel="stylesheet" />
-    <title>The best soccer teams</title>
+
+    <title>Can you memorize</title>
 </head>
 <body>    
     <div class="container">
-        <div id="screen"><b>The best soccer teams</b></div>
-        <div id="display-round">Round</div>
+        <div id="screen"><b>CAN YOU MEMORIZE?</b></div>
+        <div class="boards-display">ROUND<span id="round-counter">1</span></div>
         <div id="main-display">
-            <div id="score">Score</div>
-            <div id="white-board"> Image sequence</div>
-            <div id="chances">Chances</div>
+            <div class="boards-display">CHANCES<span id="chances-counter">3</span></div>            
+            <div id="white-board">
+                <div>
+                    CLUBES
+                </div>
+            </div>
+            <div class="boards-display">TIME LEFT: <span id="time-left-counter">10</span></div>
         </div>
-        <div id="alternatives">
-            <button class="options">a)</button>
-            <button class="options">b)</button>
-            <button class="options">c)</button>
-            <button class="options">d)</button>
+        <div class="alternative" id="alternatives">
+            <button  id="a" class="options hidden"></button>
+            <button  id="b" class="options hidden"></button>
+            <button  id="c" class="options hidden"></button>
+            <button  id="d" class="options hidden"></button>
         </div>
-        <button id="btn-restart">restart</button>     
+        <button id="btn-start">START</button>     
     </div>
     <script src="./assests/script/game.js"></script>
+    <script src="./assests/script/index.js"></script>
 </body>
 </html>
