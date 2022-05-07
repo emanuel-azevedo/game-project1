@@ -28,7 +28,7 @@ function getSequenceWithoutRepeating () {
   /* Neste loop, a ideia é fazê-lo percorrer a array "imgList"
   já reorganizada pelo .sort(compare) e adicionar o índice onde estiver na
   array declarada inicialmente, até então vazia. */
-  for (let i = 0; i < 7; i++) {    
+  for (let i = 0; i < 6; i++) {    
     roundSequence.push(imgList[i])
   }
   /* Retorna a array declarada na variável
@@ -45,7 +45,7 @@ function getSequenceWithoutRepeating () {
 /* 4.2 A função "getQuestion" invoca a questão que o player deve responder escolhendo uma das alternativas que lhe serão ofertadas posteriormente */
 function getQuestion(questionImgIndex) {
   /* 4.2.1 "questionImgIndex + 1" indica uma posição entre 1 e a posição do ultimo elemento da array "displaySequence". */
-  return`Qual foi o ${questionImgIndex + 1}º clube apresentado na sequência?`;  
+  return`WHICH FOOTBALL CLUB WAS IN POSITION NUMBER ${questionImgIndex + 1}?`;  
 }
 
 

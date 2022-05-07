@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="./assests/styles/style.css" type="text/css" rel="stylesheet" />
-    <title>The best soccer teams</title>
+
+    <title>Football Club Memory Game</title>
 </head>
-<body>
+<body class="backgroundStadium">
     <div class="container">
-        <div id="screen">The best soccer teams</div>
-        <a href="/rascunho-html.html"><button id="start-btn">Start</button></a>
+        <div id="screen"><b>FOOTBALL CLUB MEMORY GAME</b></div>
+        <div class="boards-display">ROUND<span id="round-counter">1</span></div>
+        <div id="main-display">
+            <div class="boards-display">CHANCES<span id="chances-counter">3</span></div>            
+            <div id="white-board">
+                <div>
+                    ARE YOU READY?
+                </div>
+            </div>
+            <div class="boards-display">TIME LEFT: <span id="time-left-counter">10</span></div>
+        </div>
+        <div class="alternative" id="alternatives">
+            <button  id="a" class="options hidden"></button>
+            <button  id="b" class="options hidden"></button>
+            <button  id="c" class="options hidden"></button>
+            <button  id="d" class="options hidden"></button>
+        </div>
+        <button id="btn-start">LET'S START!</button>     
     </div>
     <script src="./assests/script/game.js"></script>
+    <script src="./assests/script/index.js"></script>
 </body>
 </html>

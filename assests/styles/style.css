@@ -1,8 +1,16 @@
+new css
+
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;    
-    font-weight: bold;
+    height: 100%;
+}
+
+.backgroundStadium {
+    background: #FFFFFF url("../images/FreevectorStadium-BackgroundAS0621_generated.jpg") no-repeat left top fixed;
+    background-attachment: fixed;
+    height: 90%;
+    width: 100%;
 }
 
 /* * {
@@ -10,24 +18,129 @@ body {
 } */
 
 .container {
+    height: 600px;
+    width: 950px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 30px;
 }
 
 #screen {
-    border: 5px solid darkslateblue;
-    padding: 200px;
-    text-align: center;
-    width: 300px;    
+    color: #FFFFFF;
+    font-size: 10px;    
+    border: 3px solid darkslateblue;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    width: 300px;
+    height: 50px;  
 }
 
-#start-btn {
-    margin: 50px;
-    padding: 20px 40px;
-    background-color: green;
+#main-display {
+    background-color: #313133;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.boards-display {
+    background-color: rgb(50, 120, 180);
+    font-family: 'Nunito', sans-serif;
+    font-size: 3px;
+    font-weight: bold;
+    color: white;    
+    margin: 10px;
+    border:1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 50px;
+    width: 90px;
+}
+
+#white-board {
+    background-color: rgb(197, 197, 197);
+    color: black;
+    margin: 10px;
+    width: 450px;
+    height: 250px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid darkslateblue;
+    border-radius: 10px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+
+#alternatives {
+    margin: 5px;
+    width: 350px;    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+.options {
+    background-color:  rgb(197, 197, 197);
+    color: #313133;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 6px;
+    width: 100%;
+    height: 28px;
+    border: 1px solid #313133;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    position: relative;    
+}
+
+.options:hover, .options:focus {
+    transform: translateY(-4px);
+}
+
+.hidden {
+    display: none;
+}
+
+#btn-start {
+    min-width: 200px;
+    min-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
     color: white;
-    border: 1px solid black;
+    background:  #313133;
+    border-radius: 5px;
+    box-shadow: 12px 12px 24px  rgba(2, 121, 180, 0.327);
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
 }
   
+#btn-start:hover, #btn-start:focus {
+    color: #787878;
+    transform: translateY(-6px);
+}
+  
+.escudo {
+    height: auto;
+    width: 150px;
+    transition: 2s;
+}
