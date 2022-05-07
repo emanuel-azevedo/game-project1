@@ -23,6 +23,7 @@ function startGame() {
         img.setAttribute('class', 'escudo')
         whiteBoardElement.innerHTML = ''
         whiteBoardElement.appendChild(img)
+        console.log('img',img)
         count ++
         if (count === displaySequence.length) {
             clearInterval(interval)
@@ -35,26 +36,27 @@ function startGame() {
             const timeLeftId = setInterval(() => {
             timeLeft--
             if (timeLeft === 0) {
-                chancesCounter--
                 clearInterval(timeLeftId)   
-                /* chancesCounterElement.innerText = chancesCounter */                          
-                                
-            }
+                /* chancesCounter-- */
+                /* alternativesButtonsElement.setAttribute('disabled','disabled') */                
+                /* chancesCounterElement.innerText = chancesCounter */ 
+                }
 
-            timeLeftElement.innerText = timeLeft
+                timeLeftElement.innerText = timeLeft
 
-            alternativesButtonsElement.forEach((alternativesButton) => {
-                alternativesButton.addEventListener('click', (event) => {
-                        
-                    checkResult(event.target.innerText)
-            
-                    chancesCounterElement.innerText = chancesCounter
-                    gameOver()
-                    startBtnElement.classList.remove('hidden')
-                                
+                alternativesButtonsElement.forEach((alternativesButton) => {
+                    alternativesButton.addEventListener('click', (event) => {
+                            
+                        checkResult(event.target.innerText)
+                
+                        chancesCounterElement.innerText = chancesCounter
+                        gameOver()
+                        startBtnElement.classList.remove('hidden')
+                                    
+                    })
                 })
-            })
-            },1000)
+
+            }, 1000)
         }
     }, 1500)
 
